@@ -1,29 +1,29 @@
-/* ===== GENERAL ===== */
-
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: #fff8e1;
+  background: #0f0f1a;
+  color: white;
 }
 
 header {
-  background: #ffcc00;
+  background: #1a1a2e;
   padding: 15px;
   text-align: center;
   font-weight: bold;
   font-size: 20px;
+  border-bottom: 2px solid #ffd700;
 }
-
-/* ===== BANNER ===== */
 
 .banner {
-  background: linear-gradient(135deg, #ffcc00, #ffa000);
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
   padding: 30px 20px;
   text-align: center;
-  color: #222;
+  border-bottom: 2px solid #ffd700;
 }
 
-/* ===== CATEGORY CARDS ===== */
+.banner h1 {
+  color: #ffd700;
+}
 
 .categories {
   display: grid;
@@ -33,22 +33,21 @@ header {
 }
 
 .cat-card {
-  background: white;
+  background: #1a1a2e;
   padding: 25px;
   text-align: center;
   border-radius: 12px;
   font-weight: bold;
-  text-decoration: none;
-  color: black;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  color: #ffd700;
+  border: 1px solid #ffd700;
   transition: 0.3s;
 }
 
 .cat-card:hover {
+  background: #ffd700;
+  color: black;
   transform: scale(1.05);
 }
-
-/* ===== PACK GRID ===== */
 
 .pack-grid {
   display: grid;
@@ -58,16 +57,17 @@ header {
 }
 
 .pack-card {
-  background: white;
+  background: #1a1a2e;
   border-radius: 12px;
   padding: 15px;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border: 1px solid #333;
   transition: 0.2s;
   cursor: pointer;
 }
 
 .pack-card:hover {
+  border: 1px solid #ffd700;
   transform: translateY(-5px);
 }
 
@@ -76,39 +76,41 @@ header {
 }
 
 .price {
-  color: #ff6f00;
+  color: #ffd700;
   font-weight: bold;
   margin-top: 8px;
 }
 
-/* ===== INPUT + BUTTON ===== */
+.order-section {
+  text-align: center;
+  padding: 20px;
+}
 
 input {
-  width: 90%;
-  padding: 10px;
-  margin: 10px;
+  width: 85%;
+  padding: 12px;
+  margin: 8px;
   border-radius: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid #444;
+  background: #1a1a2e;
+  color: white;
 }
 
 .buy-btn {
-  background: #ffcc00;
-  padding: 12px;
+  background: #ffd700;
+  padding: 12px 20px;
   border: none;
   border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
 }
 
-/* ===== FOOTER ===== */
-
 footer {
   text-align: center;
   padding: 15px;
-  background: #ffcc00;
+  background: #1a1a2e;
+  border-top: 1px solid #ffd700;
 }
-
-/* ===== PAYMENT POPUP ===== */
 
 .popup {
   position: fixed;
@@ -116,7 +118,7 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.8);
   display: none;
   justify-content: center;
   align-items: center;
@@ -124,12 +126,12 @@ footer {
 }
 
 .popup-content {
-  background: white;
+  background: #1a1a2e;
   padding: 20px;
   border-radius: 12px;
   text-align: center;
   width: 300px;
-  animation: popupFade 0.3s ease;
+  border: 1px solid #ffd700;
 }
 
 .popup img {
@@ -145,11 +147,4 @@ footer {
   margin-top: 10px;
   border-radius: 6px;
   cursor: pointer;
-}
-
-/* ===== ANIMATION ===== */
-
-@keyframes popupFade {
-  from { transform: scale(0.8); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
 }
